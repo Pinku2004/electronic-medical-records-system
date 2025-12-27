@@ -152,11 +152,16 @@
     </div>
 
     <div class="card">
-        <h2>📊 Patient Statistics</h2>
-        <label>Patient ID (0 for all patients)</label>
-        <input type="number" placeholder="Example: 0 or 2">
-        <button>View Statistics</button>
+    <h2>📊 Patient Statistics</h2>
+
+    <label>Patient ID (0 for all patients)</label>
+    <input type="number" id="patientId" placeholder="Example: 0 or 2">
+
+    <button onclick="getStats()">View Statistics</button>
+
+    <p id="output" class="note"></p>
     </div>
+
 
     <div class="card">
         <h2>📅 Find Visits by Date</h2>
@@ -183,6 +188,7 @@
 <footer>
     © 2023 Electronic Medical Records System | Python Internship Project
 </footer>
+<script src="/static/script.js"></script>
 
 </body>
 </html>
